@@ -1,0 +1,314 @@
+:root {
+  --purple-100: hsl(254, 88%, 90%);
+  --purple-500: hsl(256, 67%, 59%);
+  --yellow-100: hsl(31, 66%, 93%);
+  --yellow-500: hsl(39, 100%, 71%);
+  --white: hsl(0, 0%, 100%);
+  --black: hsl(0, 0%, 7%);
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--white);
+  padding: 2rem;
+  color: var(--black);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto auto auto;
+  gap: 1rem;
+  width: 50%;
+  justify-content: center;
+  margin: auto;
+}
+
+.card {
+  border-radius: 16px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.create {
+  background: var(--yellow-100);
+  grid-column: 1;
+  grid-row: 1 / span 1;
+  height: 40vh;
+}
+
+.yellow {
+  background: var(--yellow-500);
+  grid-column: 1;
+  grid-row: 2 / span 1;
+  height: 50vh;
+}
+
+.purple {
+  background: var(--purple-500);
+  color: var(--white);
+  grid-column: 2 / span 2;
+}
+
+.purple.main {
+  grid-column: 2 / span 2;
+  text-align: center;
+  padding: 2rem 1rem;
+  height: 38vh;
+  border: 1px solid var(--purple-500);
+}
+
+.lavender {
+  background: var(--purple-100);
+  grid-column: 4;
+  grid-row: 1 / span 2;
+  height: 87vh;
+}
+
+.white {
+  background: var(--white);
+  border: 1px solid #eee;
+  width: 50%;
+}
+
+.mul {
+  width: 180px;
+}
+
+.orange {
+  background: var(--yellow-500);
+}
+
+.cal {
+  height: 10vh;
+  width: 50%;
+  margin-top: 30px;
+}
+
+.center {
+  display: flex;
+  gap: 10px;
+  width: 390px;
+  margin-bottom: 60px;
+}
+
+.last {
+  background-color: var(--purple-500);
+  margin-top: -68px;
+  height: 138px;
+  width: 29%;
+  display: flex;
+}
+
+.card-container {
+  display: flex;
+  gap: 10px; 
+   margin-left: -50px;
+}
+
+.fin {
+  display: flex;
+  flex-direction: row-reverse;
+  color: var(--white);
+}
+
+.followers {
+  height: 100px;
+  width: 120px;
+}
+
+.percent {
+  background: var(--white);
+  border: 1px solid #eee;
+  width: 20%;
+  justify-content: center;
+  margin-left: 390px;
+  margin-top: -70px;
+  margin-bottom: 60px;
+  padding: 0.5rem;
+  color: var(--black);
+}
+
+button {
+  margin-top: 1rem;
+  padding: 0.6rem 1rem;
+  background: var(--purple-500);
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  align-self: flex-start;
+}
+
+.highlight {
+  color: var(--purple-500);
+  font-weight: bold;
+}
+
+.yellow-text {
+  color: var(--yellow-500);
+}
+
+.reviews {
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+.avatar-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.bold-text {
+  font-weight: 600;
+  padding-bottom: 80px;
+}
+
+.growth {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--black);
+}
+
+.audience {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+  color: var(--black);
+  width: 50%;
+}
+
+.growth-label {
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+  color: var(--black);
+}
+
+.note {
+  font-size: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+.speech .bubble {
+  background: var(--white);
+  margin-top: 1rem;
+  padding: 0.75rem;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.img {
+  width: 130px;
+  margin-bottom: 9rem;
+}
+
+.foll {
+  height: 200px;
+}
+
+.give {
+  width: 70px;
+}
+
+.star {
+  height: 53px;
+  width: auto;
+  gap: 10px;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+  .container {
+    grid-template-columns: repeat(3, 1fr);
+    width: 70%;
+  }
+
+  .lavender {
+    grid-row: auto;
+    height: auto;
+  }
+
+  .percent {
+    margin-left: 0;
+    width: 40%;
+  }
+
+  .center {
+    width: auto;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+    width: 90%;
+  }
+
+  .purple.main {
+    height: auto;
+    padding: 1rem;
+  }
+
+  .last {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+  }
+
+  .percent {
+    width: 60%;
+    margin-top: 20px;
+  }
+
+  .center {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+
+  .card {
+    padding: 0.5rem;
+  }
+
+  .purple.main {
+    text-align: left;
+    padding: 1rem;
+  }
+
+  .percent {
+    width: 80%;
+    margin: 10px auto;
+  }
+
+  .center {
+    width: 100%;
+    gap: 5px;
+  }
+
+  .last {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+}
