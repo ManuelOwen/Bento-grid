@@ -25,7 +25,8 @@ body {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto auto auto;
   gap: 1rem;
-  width: 50%;
+  width: 40%;
+
   justify-content: center;
   margin: auto;
 }
@@ -70,7 +71,7 @@ body {
   background: var(--purple-100);
   grid-column: 4;
   grid-row: 1 / span 2;
-  height: 87vh;
+  height: 85vh;
 }
 
 .white {
@@ -96,7 +97,7 @@ body {
 .center {
   display: flex;
   gap: 10px;
-  width: 390px;
+  width: 400px;
   margin-bottom: 60px;
 }
 
@@ -112,6 +113,7 @@ body {
   display: flex;
   gap: 10px; 
    margin-left: -50px;
+  
 }
 
 .fin {
@@ -130,14 +132,15 @@ body {
   border: 1px solid #eee;
   width: 20%;
   justify-content: center;
-  margin-left: 390px;
+  margin-left: 400px;
   margin-top: -70px;
   margin-bottom: 60px;
   padding: 0.5rem;
   color: var(--black);
+  height: 100px;
 }
 
-button {
+/* button {
   margin-top: 1rem;
   padding: 0.6rem 1rem;
   background: var(--purple-500);
@@ -147,7 +150,7 @@ button {
   font-weight: bold;
   cursor: pointer;
   align-self: flex-start;
-}
+} */
 
 .highlight {
   color: var(--purple-500);
